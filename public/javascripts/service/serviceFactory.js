@@ -3,7 +3,7 @@
  */
 (function(){
     angular
-    .module('ngContacts')
+    .module('contacts')
     .factory('serviceFactory',serviceFactory);
         function serviceFactory($http){
             var getData = function(type){
