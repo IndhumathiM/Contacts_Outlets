@@ -9,16 +9,16 @@
     function contactsController($scope, serviceFactory) {
         var outletMap;
         serviceFactory.getData('contacts').success(function (contactData) {
-            console.log("contactsData" + contactData);
             $scope.contacts = contactData;
         }).error(function (contactData) {
             console.log("error");
         }),
             serviceFactory.getData('outlets').success(function (outletData) {
                 outletMap = _.object(_.map(outletData, function (item) {
+                    $scope.outletsName = item.name;
+                    console.log("scope.outlets" + item.name);
                     return [item.id, item.name]
                 }));
-                console.log(JSON.stringify(outletMap));
             }).error(function (outletData) {
                 console.log("error");
             }),
@@ -30,5 +30,6 @@
                 $scope.sortkey = value;
                 $scope.reverse = !$scope.reverse;
             }
+
     };
 })();
