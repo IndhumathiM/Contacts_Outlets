@@ -5,10 +5,10 @@ Steps to display data Contacts/Outlets coding exercise
     git clone https://github.com/IndhumathiM/Contacts_Outlets
 
 2) Open the code in IDE and run the below command in the terminal
-     npm install
+     "npm install"
      
 3) Now, run this this command
-     npm start
+     "npm start"
      
 4) open the webpage in the browser
-   http://localhost:5000
+    " http://localhost:5000 "
