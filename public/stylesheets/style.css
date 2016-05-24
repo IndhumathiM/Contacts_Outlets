@@ -2,11 +2,10 @@ body {
     magin: 20px;
     padding: 50px;
     font: 14px Arial, Helvetica, sans-serif;
+}
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
     display: none !important;
 }
-}
-
 a {
     color: #00B7FF;
 }

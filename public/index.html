@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
-<body ng-app="contacts" ng-controller="contactsController">
+<body ng-app="contacts" ng-controller="contactsController" class="ng-cloak">
 <div id="container">
     <h1>Contacts</h1>
     <table class="table table-bordered">
@@ -19,7 +19,7 @@
         <tr>
             <th class="col-md-2" ng-click="sort('firstName')">Contact Name<span class="glyphicon sort-icon"
                                                                                 ng-show="sortKey=='id'"
-                                                                                ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+                                                                                ng-class="{'glyphicon glyphicon-chevron-down':reverse,'glyphicon glyphicon-chevron-down':!reverse}"></span>
             </th>
             <th class="col-md-2" ng-click="sort('title')">contact Title<span class="glyphicon sort-icon"
                                                                              ng-show="sortKey=='id'"
