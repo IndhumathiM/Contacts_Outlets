@@ -25,11 +25,6 @@
             $scope.getOutletNameById = function (outletId) {
                 var outletName = outletMap[outletId] || "";
                 return outletName;
-            },
-            $scope.sort = function (value) {
-                $scope.sortkey = value;
-                $scope.reverse = !$scope.reverse;
             }
-
     };
 })();
